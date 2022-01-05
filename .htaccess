@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-f
+#RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ /php-rest-api-slim/public/index.php?route=/$1 [L,QSA]
+
+php_flag  log_errors on
+php_value display_erros 1
+# php_value error_log /storage/ssd4/320/14733320/public_html/api/error_log.txt
+php_value error_log C:/xampp/htdocs/php-rest-api-slim/error.log

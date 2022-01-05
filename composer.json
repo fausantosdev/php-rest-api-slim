@@ -1,0 +1,38 @@
+{
+    "name": "fallsantos/simple-php-rest-api",
+    "description": "Simple REST API in PHP",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Flavio Santos",
+            "email": "fall-_santos@hotmail.com",
+            "role": "Developer",
+            "homepage": "https://www.fallsantosdev.com.br"
+        }
+    ],
+    "support": {
+        "email": "fallsantosdev@hotmail.com"
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.3",
+        "jenssegers/blade": "^1.4",
+        "firebase/php-jwt": "^5.4",
+        "phpmailer/phpmailer": "^6.5",
+        "slim/slim": "^4.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Source\\": "source/",
+            "Config\\": "config/"
+        },
+        "files": [
+            "config/config.php",
+            "source/Support/helpers.php"
+        ]
+    },
+    "config": {
+        "vendor-dir": "source/vendor/"
+    }
+}

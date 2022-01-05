@@ -1,0 +1,6 @@
+<?php
+
+define('CONF_PASSWORD_MIN_SIZE',6);
+define('CONF_PASSWORD_MAX_SIZE',40);
+define('CONF_PASSWORD_ALGO',PASSWORD_DEFAULT);
+define('CONF_PASSWORD_OPTIONS',["cost" => 10]);
